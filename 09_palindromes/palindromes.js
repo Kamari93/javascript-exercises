@@ -1,6 +1,7 @@
 const palindromes = function (str) {
     // remove all unwanted chars, spaces, etc lowercase convert to arr split by space
-    let arr = str.toString().replace(/[^A-Za-z0-9_]/g, "").toLowerCase().split('');
+    // let arr = str.toString().replace(/[^A-Za-z0-9_]/g, "").toLowerCase().split('');
+    let arr = str.replace(/[^A-Za-z0-9_]/g, "").toLowerCase().split('');
     // convert back to str after clean-up
     let newStr = arr.join("");
     // create backwards str (from end to beginning)
